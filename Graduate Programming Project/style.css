@@ -1,0 +1,93 @@
+ h4{
+     color: black;
+     font: bolder;
+ }
+  nav, nav .nav-wrapper  {
+    height: 102px;
+    line-height: 64px;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+ 
+ nav  .brand-logo{
+     margin-left :5px;
+     
+ }
+ 
+ #appname{
+     margin-left: 50px;
+ }
+ 
+    
+  form{
+       margin-left: 500px;
+    width :500px;
+  }
+  
+  p{
+     color: black;
+     font: bolder;
+ }
+ #loginModal{
+      color: black;
+     font: bolder;
+     
+ }
+ #modal2{
+      color: black;
+     font: bolder;
+     
+ }
+ 
+ .input-field label {
+     border: 2px black;
+ }
+ 
+ .x1{
+     font-size: 1.2rem;
+ }
+ 
+ .card-title{
+     
+     color: black;
+     font: bolder;
+     
+ }
+ 
+ #textarea1{
+     color: black;
+     font: bolder;
+     
+ }
+ 
+ #rest_name{
+     color: black;
+     font: bolder;
+ }
+ 
+ .rating{
+     color: black;
+    
+ }
+ 
+ .rating {
+    color: teal;
+}
+
+option{
+    color: black;
+}
+select{
+    color: black;
+}
+.file-path validate{
+    background-color: red;
+    
+}

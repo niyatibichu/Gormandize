@@ -1,0 +1,331 @@
+[{
+    "_id": "Yoshinoya",
+    "_rev": "1-41258eba99892c7d36c3062fb87ea631",
+    "res_name": "Yoshinoya",
+    "picname": "fast-food.jpg",
+    "attachments": {
+        "name": "fast-food.jpg",
+        "content_type": "image/jpeg"
+    },
+    "avg_rating": 3,
+    "reviews": [
+        {
+            "user_id": "Nitesh",
+            "username": "Nitesh",
+            "rating": 3,
+            "text": "This is a good restaurant!!"
+        }
+    ]
+},
+{
+    "_id": "res1",
+    "_rev": "12-dde02b0cce96bcdcc63596aa5a09d720",
+    "res_name": "Starbucks",
+    "avg_rating": 5,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 3,
+            "text": "Awesome!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 5,
+            "text": "Great!!!"
+        }
+    ],
+    "picname": "starbucks.jpg",
+    "_attachments": {
+        "starbucks.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 3,
+            "digest": "md5-caDZX+eEP+E6pp9QX7Y04A==",
+            "length": 8872,
+            "stub": true
+        }
+    }
+},
+{
+    "_id": "res2",
+    "_rev": "11-0cf3317b184bce752654374f2182fbe2",
+    "res_name": "Carl's Jr.",
+    "avg_rating": 2,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 2,
+            "text": "Great!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 2,
+            "text": "Horrible!!!"
+        }
+    ],
+    "picname": "carls_burger.jpg",
+    "_attachments": {
+        "carls_burger.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 9,
+            "digest": "md5-sSp7HDrS7aldE+/Ff6FUQA==",
+            "length": 17469,
+            "stub": true
+        }
+    }
+},
+{
+    "_id": "res3",
+    "_rev": "4-0f5d02c5d183f1b1e8b2b9d8e03453fb",
+    "res_name": "Soup Plantation",
+    "avg_rating": 4,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 3,
+            "text": "OK!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 5,
+            "text": "Too Good!!!"
+        }
+    ],
+    "picname": "souplantation.jpg",
+    "_attachments": {
+        "souplantation.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 2,
+            "digest": "md5-esynzN3MD8VhHjOhzxoTrQ==",
+            "length": 27865,
+            "stub": true
+        }
+    }
+},
+{
+    "_id": "res4",
+    "_rev": "5-d54fed69bc5652a6bedd9214d9b29d07",
+    "res_name": "Cha2O",
+    "avg_rating": 4,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 4,
+            "text": "Awesome!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 4,
+            "text": "Nice Restaurant!!!"
+        },
+        {
+            "user_id": "user3",
+            "username": "priya",
+            "rating": 2,
+            "text": "Have seen better Restaurants!!!"
+        }
+    ],
+    "picname": "cha2o.jpg",
+    "_attachments": {
+        "cha2o.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 2,
+            "digest": "md5-eeO0dIJ90ZldhfePRzv3/g==",
+            "length": 19150,
+            "stub": true
+        }
+    }
+},
+{
+    "_id": "res5",
+    "_rev": "22-d392b1ba5a736851867281bd7a34ca8e",
+    "res_name": "Denny's",
+    "avg_rating": 2,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 1,
+            "text": "Do not go here!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 3,
+            "text": "Great!!!"
+        },
+        {
+            "user_id": "user3",
+            "username": "tyrion",
+            "rating": 2,
+            "text": "okay not that good"
+        },
+        {
+            "user_id": "user4",
+            "username": "melisandre",
+            "rating": 4,
+            "text": "Loved it!!!"
+        },
+        {
+            "user_id": "Kenny",
+            "username": "Kenny",
+            "rating": 4,
+            "text": "It is a decent restaurant.........pretty cheap!"
+        }
+    ],
+    "picname": "dennys.jpg",
+    "_attachments": {
+        "dennys.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 16,
+            "digest": "md5-qL0yllvAM3HQbl/rcqJC4g==",
+            "length": 18224,
+            "stub": true
+        }
+    }
+},
+{
+    "_id": "res6",
+    "_rev": "22-c72190ea07b96d994fbe9ddc43e1369c",
+    "res_name": "Dog Haus",
+    "avg_rating": 5,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 5,
+            "text": "This place is heaven if u like dogs!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 5,
+            "text": "Great!!!"
+        },
+        {
+            "user_id": "swanad",
+            "username": "swanad",
+            "rating": 4,
+            "text": "nice burgers"
+        }
+    ],
+    "picname": "doghaus.jpg",
+    "_attachments": {
+        "doghaus.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 20,
+            "digest": "md5-7c9jOrOvqYXf7UVXEWOAcw==",
+            "length": 28049,
+            "stub": true
+        }
+    }
+},
+{
+    "_id": "res7",
+    "_rev": "16-c7d6b37a5adf9ee0c76aa14d8deae361",
+    "res_name": "Pizza Press",
+    "avg_rating": 4,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 4,
+            "text": "Awesome!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 4,
+            "text": "Great!!!"
+        },
+        {
+            "user_id": "nini",
+            "username": "nini",
+            "rating": 4,
+            "text": "wooujh6txqwhg gxuqwgy"
+        }
+    ],
+    "picname": "pizzapress.jpg",
+    "_attachments": {
+        "pizzapress.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 14,
+            "digest": "md5-sU8eOoW/fyAkMOARbd/lxg==",
+            "length": 17538,
+            "stub": true
+        }
+    }
+},
+{
+    "_id": "res8",
+    "_rev": "22-cd45b83563e3b16d9e5563a02ddbb32f",
+    "res_name": "Thai Basil",
+    "avg_rating": 3,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 3,
+            "text": "Wow!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 3,
+            "text": "I like their preparation!!!"
+        }
+    ],
+    "picname": "thaibasil.jpg",
+    "_attachments": {
+        "thaibasil.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 21,
+            "digest": "md5-03m+OJiujtGh2xTPRObC4g==",
+            "length": 16827,
+            "stub": true
+        }
+    }
+},
+{
+    "_id": "res9",
+    "_rev": "3-60351f5c75621b61bf1121052cd38c79",
+    "res_name": "Aloha Java",
+    "avg_rating": 4,
+    "reviews": [
+        {
+            "user_id": "user1",
+            "username": "niyati",
+            "rating": 2,
+            "text": "Cheap and nice!!!"
+        },
+        {
+            "user_id": "user2",
+            "username": "jamie",
+            "rating": 2,
+            "text": "No standing in line!!!"
+        },
+        {
+            "user_id": "user5",
+            "username": "Bran",
+            "rating": 4,
+            "text": "Chai bomb is my favourite!!!"
+        }
+    ],
+    "picname": "aloha.jpg",
+    "_attachments": {
+        "aloha.jpg": {
+            "content_type": "image/jpeg",
+            "revpos": 2,
+            "digest": "md5-vrGNJiNyFLUqPZN5doUFTQ==",
+            "length": 17980,
+            "stub": true
+        }
+    }
+}]

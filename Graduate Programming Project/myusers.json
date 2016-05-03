@@ -1,0 +1,72 @@
+[
+    {
+   "_id": "dipika",
+   "_rev": "1-4224ac85848d1076900dac13df7aa085",
+   "firstname": "hikj",
+   "lastname": "esfe",
+   "username": "dipika",
+   "password": "1234",
+   "email": "dip@gmail.com"
+},
+{
+   "_id": "gmk",
+   "_rev": "1-644a6fc74581ab44b1b3fc024e6599d0",
+   "firstname": "gargi",
+   "lastname": "kul",
+   "username": "gmk",
+   "password": "abc125",
+   "email": "gmk@yahoo.com"
+},
+{
+   "_id": "jonsnow",
+   "_rev": "1-d744b5c5b0cd77f5e6c0a7d5ff43099e",
+   "firstname": "Jon",
+   "lastname": "Snow",
+   "username": "jonsnow",
+   "password": "got",
+   "email": "jsnow@castleblack.com"
+},
+{
+   "_id": "user1",
+   "_rev": "8-63a964d724d9016dafea14a8c781686d",
+   "username": "niyati",
+   "password": "abc123",
+   "reviews": [
+       {
+           "restaurant": "Starbucks",
+           "rating": 3,
+           "text": "Awesome!!!"
+       },
+       {
+           "restaurant": "Carl's Jr.",
+           "rating": 5,
+           "text": "Great!!!"
+       }
+   ],
+   "firstname": "niyati",
+   "lastname": "bichu",
+   "email": "niyatibichu@gmail.com"
+},
+{
+   "_id": "user2",
+   "_rev": "8-7295f490632c97d90cca42f15dd1fc15",
+   "username": "jamie",
+   "password": "wassup",
+   "reviews": [
+       {
+           "restaurant": "Starbucks",
+           "rating": 3,
+           "text": "Awesome!!!"
+       },
+       {
+           "restaurant": "Carl's Jr.",
+           "rating": 5,
+           "text": "Great!!!"
+       }
+   ],
+   "firstname": "jamie",
+   "lastname": "lannister",
+   "email": "jamielannister@gmail.com"
+}
+
+]

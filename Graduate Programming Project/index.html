@@ -1,0 +1,283 @@
+<!doctype html>
+<html ng-app="myapp">
+
+<head>
+    <title>Grad Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+<body ng-controller="newcontroller1">
+    <!--H-E-A-D-E-R-->
+    <header>
+        <nav>
+            <div class="nav-wrapper teal darken-1 " id="bar1">
+                <i class=" brand-logo align-left medium material-icons">restaurant</i>
+                <a href="index.html" class="brand-logo left-align" id="appname">GORMANDISE </a>
+
+                <a href="#" data-activates="nav-mobile" class="right button-collapse">
+                    <i class="mdi-navigation-more-vert"></i></a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="modal-trigger waves-effect waves-light" ng-click="addreview()" href="#rev">Write Review</a>
+
+                        <!-- Modal Structure For Review -->
+                        <div id="rev" class="modal modal-fixed-footer" style=" overflow-y: hidden, height:200px, top:2%">
+                            <div class="modal-content">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right ">CLOSE</a>
+                                <h4>Write Review</h4>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input ng-model="new_res_name" placeholder="Add a new Restaurant" id="rest_name" type="text">
+                                    </div>
+
+                                    <div class="input-field col s12">
+                                        <input ng-model="usname" placeholder="Enter username" id="usname" type="text" style="color:black">
+                                    </div>
+
+                                    <div class="input-field col s12">
+                                        <textarea ng-model="new_comment" id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Textarea</label>
+                                    </div>
+                                </div>
+
+                                <div class=" row file-field input-field">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" style="color:black" type="text" ng-model="img_upload">
+                                    </div>
+                                </div>
+
+                                <label style="color:black"><h5>Rate {{new_res_name}}!!</h5></label>
+
+
+                                <div star-rating rating="starRating1" read-only="false" max-rating="5" click="click1(param)" mouse-hover="mouseHover1(param)"
+                                    mouse-leave="mouseLeave1(param)" ng-model="starRating1"></div>
+                                <div style="color:black"> <span class="label label-primary">Star Rating: {{starRating1}}</span>
+                                    <span class="label label-primary"></span>
+
+
+                                    <a class="btn-floating btn-large waves-effect waves-light red modal-action modal-close" ng-click="post_review()"><i class="material-icons">add</i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+
+                    </li>
+
+
+                    <li><a class="modal-trigger waves-effect waves-light" href="#modal2" ng-click="register()">Register</a>
+                        <!-- Modal Structure For Register  -->
+                        <div id="modal2" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right ">CLOSE</a>
+                                <h4>Register</h4>
+
+                                <br>
+                                <div class="row" ng-controller="RegController">
+                                    <form class="col s12 simple-form" nonvalidate>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input id="first_name" type="text" ng-model="fname" class="validate" placeholder="First Name">
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input id="last_name" type="text" ng-model="lname" class="validate" placeholder="Last Name">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input id="u2" type="text" class="validate" placeholder="Username" ng-model="uname">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input id="password2" ng-model="pwd" type="password" class="validate" placeholder="Password">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input id="email1" ng-model="email" type="email" class="validate" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        
+                                        <a class="modal-action modal-close waves-effect waves-light btn " ng-click="update()" value="Save">Sign Up!!</a>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="modal-trigger waves-effect waves-light" href="#modal3" ng-click="about_us()">About Us</a>
+                        <!-- Modal Structure For About Us  -->
+                        <div id="modal3" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right ">CLOSE</a>
+                                <h4>About Us</h4>
+                                <hr>
+                                <p>Using Gormandise Learn how to take full advantage of Gormandise from searching of restaurants
+                                    to joining the Elite Squad and everything in between. Getting Started everything you
+                                    need to know to join the ever-growing ranks of Gormandisers in your community and beyond.
+                                    Using the Gormandise App Learn how the app works to improve the mobile experience.</p>
+                                <p> You can lookup on Gormandise for restaurants. Gormandise Elite Squad Everything you need
+                                    to know about the people we recognize as the most active evangelists and role models
+                                    for their communities.
+                                </p>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <form class="teal lighten-2">
+                    <div class="input-field">
+                        <input id="search" type="search" ng-model="SearchBox" placeholder="search for restaurants by name" />
+                        <label for="search"><i class="material-icons">search</i></label><i class="material-icons" ng-click="clearSearch()">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+    <br>
+
+
+    <!--M-A-I-N-->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s3" ng-repeat="index in hotel| filter:SearchBox">
+
+                    <div class="card orange lighten-5">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img alt="food" ng-src="http://localhost:5984/restaurants/{{index._id}}/{{index.picname}}" />
+                            </div>
+                            <div>
+                                <h3> <span class="card-title">{{index.res_name}}</span>
+                                 <a class="btn-floating btn-large waves-effect waves-light teal" ng-click="addreview_existing(index,index.avg_rating)" href="#rev_exist"><i class="material-icons">add</i></a> </h3></div>
+
+
+
+                            <div class="card-action">
+                                <div class="rating">
+                                    <i class="material-icons" ng-repeat="t in getstars(index.avg_rating) track by $index">star</i>
+                                </div>
+
+                                <a class="right blue-grey-text x1" href="#seereviewModal" ng-click="see_reviews(index.reviews) ">{{index.reviews.length}} reviews                            
+                                    </a>
+                            </div>
+                            <!-- Modal Structure For adding Reviews to existing restaurants -->
+                            <div id="rev_exist" class="modal modal-fixed-footer">
+                                <div class="modal-content">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right">CLOSE</a>
+                                    <h4>Write Review for {{na.res_name}}</h4>
+                                    <br>
+
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input placeholder="Enter username" ng-model="r.usname1" type="text" style="color:black">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea ng-model="r.new_comment1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1">Textarea</label>
+                                        </div>
+                                    </div>
+
+                                    <div star-rating rating="starRating1" read-only="false" max-rating="5" click="click1(param)" mouse-hover="mouseHover1(param)"
+                                        mouse-leave="mouseLeave1(param)"></div>
+                                    <div style="color:black"> <span class="label label-primary"></span>
+                                        <span class="label label-primary"></span>
+                                    </div>
+
+                                    <br>
+                                    <div class="row">
+                                        <a class="btn-floating btn-large waves-effect waves-light red modal-action modal-close" ng-click="post_review_exist(r,na)"><i class="material-icons">add</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Structure For See Reviews  -->
+                            <div id="seereviewModal" class="modal modal-fixed-footer">
+                                <div class="modal-content">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right ">CLOSE</a>
+                                    <h4>View Reviews</h4>
+                                    <hr>
+                                    <ul class="collection">
+                                        <li class="collection-item" ng-repeat="i in na1 track by $index">
+                                            <span class="title">Name: {{na1[$index].username}}</span>
+                                            <p>Comment: {{na1[$index].text}}</p>
+
+                                            <br> Rating:
+                                            <i class="material-icons " style="color:teal" ng-repeat="t in getstars(na1[$index].rating) track by $index">star</i>
+                                        </li>
+                                    </ul>
+
+                                    <!-- <pre> {{na1| json:spacing}} </pre>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--F-O-O-T-E-R-->
+    <footer class="teal darken-1 page-footer ">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Gormandise</h5>
+                    <p class="grey-text text-lighten-4">Terms Of Service</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Discover</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">About us</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">Gormandise Inc.</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
